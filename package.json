@@ -1,6 +1,6 @@
 {
   "author": "Alexandre Masy <hello@alexandremasy.com",
-  "description": "Customize the head from the GingerView instance",
+  "description": "Customize the body from the GingerView instance",
   "devDependencies": {
     "chokidar": "^3.3.1",
     "node-notifier": "^7.0.0",
@@ -12,8 +12,8 @@
   ],
   "keywords": [],
   "license": "UNLICENSED",
-  "main": "dist/spices-ginger-head.min.js",
-  "name": "@ginger/head",
+  "main": "dist/spices-ginger-body.min.js",
+  "name": "@ginger/body",
   "nodemonConfig": {
     "ignore": [
       ".git",
@@ -30,12 +30,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@bitbucket.org/infinity-mobile/ginger-head.git"
+    "url": "git+ssh://git@bitbucket.org/infinity-mobile/ginger-body.git"
   },
   "scripts": {
     "analyse": "webpack --json > stats.json",
     "bundle": "webpack --mode=production",
     "start": "nodemon --exec \"yarn bundle\""
   },
-  "version": "1.0.0"
+  "version": "0.0.0"
 }

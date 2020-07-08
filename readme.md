@@ -1,7 +1,7 @@
-# Ginger Head Plugin
+# Ginger Body Plugin
 
-Allows the alteration of the HTML header directly from the ginger views. 
-e.g. Change the title of the document based on dynamically loaded data
+Allows the alteration of the HTML body directly from the ginger views. 
+e.g. Change the bodyClass of the document based on dynamically loaded data
 
 
 ## Setup
@@ -9,26 +9,15 @@ e.g. Change the title of the document based on dynamically loaded data
 1. Install the plugin
 
 ```
-yarn add @ginger/head
+yarn add @ginger/body
 ```
 
 2. Declare the plugin
 
 ```
-import { GingerHeadPlugin } from '@ginger/head'
-
-let opts = {
-  key: 'ABC'
-}
+import { GingerBodyPlugin } from '@ginger/body'
 
 app.use(VueGinger, {
-  plugins: [{ optins: opts, plugin: GingerHeadPlugin }]
+  plugins: [{ optins: {}, plugin: GingerBodyPlugin }]
 })
 ```
-
-## Configuration
-
-## Declare head from the view
-
-## Trigger an update from a view
-

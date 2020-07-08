@@ -12,13 +12,13 @@ const resolve = _path => path.resolve(__dirname, _path);
 module.exports = [
   {
     entry: resolve('src/index.js'),
-    file: 'spices-ginger-head.js',
+    file: 'spices-ginger-body.js',
     format: 'umd', 
     env: 'development'
   },
   {
     entry: resolve('src/index.js'),
-    file: 'spices-ginger-head.min.js',
+    file: 'spices-ginger-body.min.js',
     format: 'umd',
     env: 'production'
   },
@@ -38,7 +38,7 @@ function genConfig(opts){
     output: {
       path: path.resolve(__dirname, 'dist'),
       filename: opts.file,
-      library: 'spices-ginger-head',
+      library: 'spices-ginger-body',
       libraryTarget: opts.format
     },
     plugins: [
