@@ -40,5 +40,5 @@
     "bundle": "rollup -c",
     "start": "nodemon --exec \"yarn bundle\""
   },
-  "version": "1.0.1"
+  "version": "1.0.2"
 }
