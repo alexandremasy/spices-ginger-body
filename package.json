@@ -17,6 +17,7 @@
   ],
   "license": "MIT",
   "main": "dist/spices-ginger-body.min.js",
+  "module": "dist/spices-ginger-body.esm.min.js",
   "name": "@ginger/body",
   "nodemonConfig": {
     "ignore": [
@@ -38,6 +39,7 @@
   },
   "scripts": {
     "bundle": "rollup -c",
+    "prepublish": "yarn bundle",
     "start": "nodemon --exec \"yarn bundle\""
   },
   "version": "1.0.2"
