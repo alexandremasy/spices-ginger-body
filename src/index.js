@@ -9,7 +9,6 @@ export default function({capabilities, options}){
     const routes = capabilities.store.getters['ginger/routes'];
     body.routes = routes;
 
-    console.log('routes add', current);
     body.guard(current, () => {
       // document.body.classList.add('theme-abc');
     });
@@ -17,7 +16,6 @@ export default function({capabilities, options}){
 
   capabilities.router.beforeEach((to, from, next) => {
     current = to;
-    console.log('guard', to);
     body.guard(to, next);
   })
 
