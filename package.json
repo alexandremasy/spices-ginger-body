@@ -18,7 +18,7 @@
   "license": "MIT",
   "main": "dist/spices-ginger-body.min.js",
   "module": "dist/spices-ginger-body.esm.min.js",
-  "name": "@ginger/body",
+  "name": "@spices/ginger-body",
   "nodemonConfig": {
     "ignore": [
       ".git",
@@ -28,14 +28,6 @@
       "src"
     ],
     "ext": "js"
-  },
-  "publishConfig": {
-    "access": "public",
-    "registry": "https://npm.infinity-commerce.io/"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+ssh://git@bitbucket.org/infinity-mobile/ginger-body.git"
   },
   "scripts": {
     "bundle": "rollup -c",

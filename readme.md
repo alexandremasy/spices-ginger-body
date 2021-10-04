@@ -9,13 +9,13 @@ e.g. Change the bodyClass of the document based on dynamically loaded data
 1. Install the plugin
 
 ```
-yarn add @ginger/body
+yarn add @spices/ginger-body
 ```
 
 2. Declare the plugin
 
 ```
-import { GingerBodyPlugin } from '@ginger/body'
+import { GingerBodyPlugin } from '@spices/ginger-body'
 
 app.use(VueGinger, {
   plugins: [{ optins: {}, plugin: GingerBodyPlugin }]
